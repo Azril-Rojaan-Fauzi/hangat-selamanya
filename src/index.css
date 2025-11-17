@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,700&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-primary: #f6f4ec;
-  --font-secondary: "Archivo", sans-serif;
+  --font-secondary: "Archivo Black", sans-serif;
   --font-primary: "Azeret Mono", monospace;
 }
 
 body {
-  @apply bg-primary;
+  @apply bg-primary font-primary;
 }
