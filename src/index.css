@@ -10,3 +10,11 @@
 body {
   @apply bg-primary font-primary;
 }
+
+.get-in-touch-hover {
+  @apply before:bg-primary duration-500 before:absolute before:inset-0 before:-z-1 before:w-0 before:border-black before:transition-all before:content-[""] hover:before:w-full hover:before:border;
+}
+
+.projects-hover {
+  @apply duration-500 before:absolute before:inset-0 before:-z-1 before:w-0 before:bg-black before:transition-all before:content-[""] hover:before:w-full;
+}
