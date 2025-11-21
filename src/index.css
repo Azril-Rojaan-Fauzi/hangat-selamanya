@@ -11,6 +11,10 @@ body {
   @apply bg-primary font-primary;
 }
 
+.page-wrapper {
+  @apply h-[calc(100vh-96px)] md:h-[calc(100vh-68px)];
+}
+
 .get-in-touch-hover {
   @apply before:bg-primary duration-500 before:absolute before:inset-0 before:-z-1 before:w-0 before:border-black before:transition-all before:content-[""] hover:before:w-full hover:before:border;
 }
