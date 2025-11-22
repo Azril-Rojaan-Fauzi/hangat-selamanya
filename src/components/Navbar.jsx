@@ -27,7 +27,7 @@ const Navbar = () => {
               isScrolled ? "text-2xl" : "text-3xl"
             }`}
           >
-            HangatSelamanya
+            Home
           </Link>
 
           <div

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/hangat-selamanya.jpeg";
 
 const Home = () => {
   return (
@@ -20,13 +19,13 @@ const Home = () => {
             <div className="flex flex-col gap-4 text-center text-xs font-light md:flex-row lg:text-sm">
               <Link
                 to="/contact"
-                className="text-primary get-in-touch-hover relative isolate h-fit cursor-pointer bg-black px-4 py-3 transition-all duration-500 hover:text-black"
+                className="text-primary get-in-touch-hover relative isolate h-fit cursor-pointer rounded-md bg-black px-4 py-3 transition-all duration-500 hover:text-black"
               >
                 Get In Touch
               </Link>
               <Link
                 to="/projects"
-                className="projects-hover hover:text-primary relative h-fit cursor-pointer border px-4 py-3 transition-all duration-500"
+                className="projects-hover hover:text-primary relative h-fit cursor-pointer rounded-md border px-4 py-3 transition-all duration-500"
               >
                 Projects
               </Link>
@@ -37,7 +36,7 @@ const Home = () => {
         <div className="hidden md:block md:w-1/2">
           <div className="relative h-full w-full overflow-hidden rounded-md transition-all duration-500 hover:shadow-2xl">
             <img
-              src={logo}
+              src="/assets/hangat-selamanya.jpeg"
               alt="logo"
               loading="lazy"
               className="h-full w-full object-cover transition-all duration-500 hover:scale-[1.02] hover:brightness-105"
