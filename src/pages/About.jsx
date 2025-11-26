@@ -24,7 +24,7 @@ const About = () => {
 
         <div className="flex h-full w-full flex-col justify-center px-6 md:gap-6">
           <h3 className="hidden text-center text-xs md:block md:text-start lg:text-base">
-            - Who we are -
+            | Who we are |
           </h3>
           <p className="py-3 text-center text-sm/8 font-light md:text-start lg:text-2xl/12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At,

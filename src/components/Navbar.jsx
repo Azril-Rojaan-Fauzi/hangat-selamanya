@@ -31,7 +31,7 @@ const Navbar = () => {
           </Link>
 
           <div
-            className={`flex items-center gap-10 transition-all duration-300 ${isScrolled ? "text-xs" : "text-sm"}`}
+            className={`flex items-center gap-10 pl-4 transition-all duration-300 md:pl-0 ${isScrolled ? "text-xs" : "text-sm"}`}
           >
             <Link to="/about" className="cursor-pointer">
               About
