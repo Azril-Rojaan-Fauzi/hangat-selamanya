@@ -1,6 +1,7 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { projects } from "../data/projects";
 import GalleryImage from "../components/GalleryImage";
+import Footer from "../components/Footer";
 
 const ProjectDetail = () => {
   const { slug } = useParams();
@@ -14,18 +15,7 @@ const ProjectDetail = () => {
         <div className="flex flex-col p-6">
           <h3 className="text-xs md:text-sm">| Projects | {data.title} |</h3>
           <GalleryImage data={data} />
-          <div className="flex justify-between pt-10">
-            <Link>
-              <button className="cursor-pointer text-sm uppercase md:text-base">
-                view project
-              </button>
-            </Link>
-            <Link>
-              <button className="cursor-pointer text-sm uppercase md:text-base">
-                book now
-              </button>
-            </Link>
-          </div>
+          <Footer />
         </div>
       </div>
     </div>

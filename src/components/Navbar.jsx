@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ textColor }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,15 +15,17 @@ const Navbar = () => {
 
   return (
     <div
-      className={`bg-primary fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? " py-2 " : " py-4"
+      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
+        isScrolled ? "bg-primary py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="mx-auto max-w-7xl px-2 md:px-6">
-        <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
+        <div
+          className={`flex flex-col items-center justify-between gap-2 md:flex-row ${textColor === "home" ? "text-yellow-300" : "text-black"}`}
+        >
           <Link
             to="/"
-            className={`font-primary cursor-pointer font-bold transition-all duration-300 ${
+            className={`font-primary cursor-pointer font-medium transition-all duration-300 ${
               isScrolled ? "text-2xl" : "text-3xl"
             }`}
           >
@@ -31,7 +33,7 @@ const Navbar = () => {
           </Link>
 
           <div
-            className={`flex items-center gap-10 pl-4 transition-all duration-300 md:pl-0 ${isScrolled ? "text-xs" : "text-sm"}`}
+            className={`flex items-center gap-10 pl-4 font-medium transition-all duration-300 md:pl-0 ${isScrolled ? "text-xs" : "text-sm"}`}
           >
             <Link to="/about" className="cursor-pointer">
               About

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects } from "../data/projects";
+import Footer from "../components/Footer";
 
 const Projects = () => {
   return (
@@ -49,6 +50,7 @@ const Projects = () => {
               </p>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     </div>

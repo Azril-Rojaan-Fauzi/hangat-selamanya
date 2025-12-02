@@ -6,9 +6,9 @@ const About = () => {
           <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-white p-2 md:p-3">
             <figure className="h-full">
               <img
-                src="/assets/hangat-selamanya.jpeg"
+                src="/assets/profile.jpg"
                 alt=""
-                className="h-full object-cover"
+                className="aspect-3/2 h-full object-cover object-top"
               />
             </figure>
             <figcaption className="bottom-0 w-full bg-white p-2 text-black">
