@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ textColor }) => {
+const Navbar = ({ mainColor }) => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -15,13 +15,13 @@ const Navbar = ({ textColor }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-primary py-2" : "bg-transparent py-4"
+      className={`fixed top-0 left-0 z-40 w-full transition-all duration-300 ${mainColor === "home" ? "bg-transparent" : "bg-primary"} ${
+        isScrolled ? " py-2" : " py-4"
       }`}
     >
       <div className="mx-auto max-w-7xl px-2 md:px-6">
         <div
-          className={`flex flex-col items-center justify-between gap-2 md:flex-row ${textColor === "home" ? "text-yellow-300" : "text-black"}`}
+          className={`flex flex-col items-center justify-between gap-2 md:flex-row ${mainColor === "home" ? "text-yellow-300" : "text-black"}`}
         >
           <Link
             to="/"
