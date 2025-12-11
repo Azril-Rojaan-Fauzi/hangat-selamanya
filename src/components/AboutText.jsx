@@ -1,31 +1,13 @@
 import { motion } from "motion/react";
+import useSlideFade from "../hooks/useSlideFade";
 
 const AboutText = () => {
-  const container = {
-    hidden: { opacity: 0, x: 50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        delay: 1,
-        duration: 0.2,
-        staggerChildren: 0.2,
-      },
-    },
-    exit: {
-      opacity: 0,
-      x: 50,
-      transition: {
-        duration: 0.4,
-      },
-    },
-  };
-
-  const child = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: 50 },
-  };
+  const { container, child } = useSlideFade({
+    axis: "x",
+    distance: 50,
+    delay: 0.5,
+    stagger: 0.2,
+  });
 
   return (
     <motion.div
