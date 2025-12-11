@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="flex justify-between pt-10">
       <Link>
         <button className="cursor-pointer text-xs uppercase md:text-base">
-          view project
+          instagram
         </button>
       </Link>
       <Link>
