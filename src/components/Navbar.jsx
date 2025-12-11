@@ -39,7 +39,7 @@ const Navbar = ({ mainColor }) => {
               About
             </Link>
             <Link to="/projects" className="cursor-pointer">
-              Projects
+              Portfolio
             </Link>
             <Link to="/contact" className="cursor-pointer">
               Contact
