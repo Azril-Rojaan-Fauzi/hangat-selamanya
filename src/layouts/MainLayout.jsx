@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 const MainLayout = () => {
   const location = useLocation();
 
-  const isHome = location.pathname === "/";
-  const mainColor = isHome ? "home" : "no";
+  const locationPath = location.pathname === "/";
+  const isHome = locationPath ? "home" : "no";
   return (
     <>
-      <Navbar mainColor={mainColor} />
+      <Navbar isHome={isHome} />
       <main className="">
         <Outlet />
       </main>
