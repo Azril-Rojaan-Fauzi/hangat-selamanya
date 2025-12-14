@@ -30,7 +30,7 @@ body {
 }
 
 .nav-underline {
-  @apply absolute bottom-0 left-0 h-0.5 w-full;
+  @apply absolute bottom-0 left-0 w-full;
 }
 
 /* Navbar hover end */

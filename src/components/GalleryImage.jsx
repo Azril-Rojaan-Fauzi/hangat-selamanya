@@ -15,7 +15,7 @@ const GalleryImage = ({ data }) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="columns-1 gap-4 pt-6 md:columns-2"
+        className="row-auto columns-1 gap-4 pt-6 md:columns-2"
       >
         {images.map((path, index) => (
           <motion.img

@@ -61,7 +61,7 @@ const Navbar = ({ isHome }) => {
                     {isActive && (
                       <motion.span
                         layoutId="navbar-underline"
-                        className={`nav-underline ${
+                        className={`nav-underline ${isScrolled ? "h-px" : "h-0.5"} ${
                           isHome === "home" ? "bg-yellow-300" : "bg-black"
                         }`}
                         transition={{

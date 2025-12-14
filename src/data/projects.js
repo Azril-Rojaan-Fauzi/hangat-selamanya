@@ -1,8 +1,34 @@
 export const projects = [
   {
+    id: 5,
+    title: "Naufal Graduation",
+    slug: "naufal-graduation",
+    description: "From Naufal graduation session",
+    url: "/assets/project5/naufal-banner.jpg",
+    images: [
+      "/assets/project5/naufal-4.jpg",
+      "/assets/project5/naufal-2.jpg",
+      "/assets/project5/naufal-1.jpg",
+      "/assets/project5/naufal-3.jpg",
+    ],
+  },
+  {
+    id: 4,
+    title: "Nabila Graduation",
+    slug: "nabila-graduation",
+    description: "From Nabila graduation session",
+    url: "/assets/project4/nabila-banner.jpg",
+    images: [
+      "/assets/project4/nabila-2.jpg",
+      "/assets/project4/nabila-3.jpg",
+      "/assets/project4/nabila-1.jpg",
+      "/assets/project4/nabila-4.jpg",
+    ],
+  },
+  {
     id: 1,
     title: "Shayla Graduation",
-    slug: "Shayla-graduation",
+    slug: "shayla-graduation",
     description: "From Shayla Andromeda's graduation session",
     url: "/assets/project1/shayla-banner.jpg",
     images: [
