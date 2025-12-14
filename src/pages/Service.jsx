@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import Footer from "../components/Footer";
 
 const text =
   "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas animi earum dignissimos quia modi cupiditate, amet ducimus commodi pariatur nisi?";
@@ -53,6 +54,14 @@ const Service = () => {
             exit={{ scaleX: 0, transition: { duration: 0.4 } }}
             className="h-px w-full origin-left bg-black"
           />
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            exit={{ opacity: 0, y: 10, transition: { duration: 0.4 } }}
+          >
+            <Footer />
+          </motion.div>
         </div>
       </div>
     </div>
