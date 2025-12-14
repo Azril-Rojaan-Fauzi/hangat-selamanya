@@ -14,8 +14,8 @@ const Navbar = ({ isHome }) => {
       path: "/projects",
     },
     {
-      name: "Contact",
-      path: "/contact",
+      name: "Service",
+      path: "/service",
     },
   ];
 
